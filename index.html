@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onpause</title>
+</head>
+<body>
+
+    <video controls onplay="myFunction2()" onpause="myFunction()">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+
+    <p id="demo"></p>
+
+
+    <script>
+        function myFunction(){
+        document.getElementById("demo").innerHTML = 'You paused video';
+        document.getElementById("demo").style.backgroundColor = 'aqua';
+        }
+
+        function myFunction2(){
+            document.getElementById('demo').innerHTML = 'You played video';
+            document.getElementById('demo').style.backgroundColor = 'pink';
+
+        }
+    </script>
+    
+</body>
+</html>
